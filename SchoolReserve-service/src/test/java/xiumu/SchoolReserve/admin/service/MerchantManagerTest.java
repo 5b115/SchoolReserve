@@ -32,12 +32,12 @@ public class MerchantManagerTest extends GenericManagerTestCase<Long, Merchant, 
 		this.merchantManager = merchantManager;
 		this.manager = this.merchantManager;
 	}
-	@Before
-	public void setUp() {
+	@Test
+	public void TestInsert() throws Exception {
 		Merchant merchant = new Merchant();
 		merchant.setMerchantname("张三");
 		merchant.setMerchantaddress("河南省郑州市");
-		this.entity = this.manager.save(merchant);
+		this.manager.save(merchant);
 	}
 	@Test
 	public void testFindByMerchantname() {
