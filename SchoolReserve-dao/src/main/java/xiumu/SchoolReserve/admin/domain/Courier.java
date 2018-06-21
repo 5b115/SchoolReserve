@@ -6,7 +6,7 @@ import javax.persistence.Table;
 
 import edu.zut.cs.javaee.dream.base.domain.BaseEntity;
 
-@Table(name = "T_MERCHANT")
+@Table(name = "T_COURIER")
 @Entity
 public class Courier extends BaseEntity{
 

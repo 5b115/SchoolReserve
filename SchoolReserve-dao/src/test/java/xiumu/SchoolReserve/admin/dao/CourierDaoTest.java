@@ -21,12 +21,14 @@ public class CourierDaoTest extends GenericDaoTestCase<Long, Courier, CourierDao
 	
 	
 	@Test
-	public void testFindAll() {
+	public void testFindAll() 
+	{
 
 		List<Courier> result = this.courierDao.findAll();
-		if (logger.isInfoEnabled()) {
-			logger.info("testFindAll() - List<Courier> result={}", result); //$NON-NLS-1$
-		}
-
+				if (logger.isInfoEnabled())
+				{
+					logger.info("testFindAll() - List<Courier> result={}", result); //$NON-NLS-1$
+					}
+							
 	}
 }
