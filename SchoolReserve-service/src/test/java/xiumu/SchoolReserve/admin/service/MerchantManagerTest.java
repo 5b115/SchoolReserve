@@ -33,7 +33,7 @@ public class MerchantManagerTest extends GenericManagerTestCase<Long, Merchant, 
 		this.manager = this.merchantManager;
 	}
 	@Before
-	public void setUp() throws Exception{
+	public void setUp() {
 		Merchant merchant = new Merchant();
 		merchant.setMerchantname("张三");
 		merchant.setMerchantaddress("河南省郑州市");
