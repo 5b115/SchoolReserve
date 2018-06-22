@@ -12,10 +12,10 @@ public class Merchant extends BaseEntity{
 
 	private static final long serialVersionUID = -4376674977047164142L;
 	
-	@Column(name = "MERCHANTNAME")
+	@Column(name = "merchantname")
 	String merchantname;	//商户店名
 	
-	@Column(name = "MERCHANTADDRESS")
+	@Column(name = "merchantaddress")
 	String merchantaddress;  //商户地址
 
 	public String getMerchantname() {

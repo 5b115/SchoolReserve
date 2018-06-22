@@ -21,12 +21,10 @@ public class MerchantDaoTest extends GenericDaoTestCase<Long, Merchant, Merchant
 	
 	
 	@Test
-	public void testFindAll() {
+	public void testInsert() {
 
-		List<Merchant> result = this.merchantDao.findAll();
-		if (logger.isInfoEnabled()) {
-			logger.info("testFindAll() - List<Merchant> result={}", result); //$NON-NLS-1$
-		}
-
+		Merchant merchant = new Merchant();
+		merchant.setMerchantaddress("北苑餐厅");
+		
 	}
 }
