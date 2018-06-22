@@ -37,7 +37,11 @@
 
 	<!-- 自动搜索@Controller标注的类 -->
 	<context:component-scan
+<<<<<<< HEAD
 		base-package="xiumu.SchoolReserve.**.controller" />
+=======
+		base-package="edu.zut.cs.javaee.dream.**.controller" />
+>>>>>>> ab306686108a50cbc9d26570516bd13973f03c63
 
 	<bean
 		class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
