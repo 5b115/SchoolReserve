@@ -39,4 +39,5 @@ public class CourierManagerImpl extends GenericManagerImpl<Courier, Long> implem
 		this.courierDao = courierDao;
 		this.dao =  this.courierDao;
 	}
+
 }
