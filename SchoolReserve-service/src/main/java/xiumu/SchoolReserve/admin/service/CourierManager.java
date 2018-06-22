@@ -12,4 +12,7 @@ public interface CourierManager extends GenericManager<Courier, Long> {
 	List<Courier> findAll();
 	
 	List<Courier> findbyCname(String Cname);
+	
+	
+	 
 }
