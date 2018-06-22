@@ -22,9 +22,9 @@ public class IndentManagerImpl extends GenericManagerImpl<Indent, Long> implemen
 	IndentDao indentDao;
 	
 	@Override
-	public List<Indent> findbyIndentname(String indentname) {
+	public List<Indent> findbyIndentfoodname(String indentfoodname) {
 		Indent queryObject = new Indent();
-		queryObject.setIntendfoodname(indentname);
+		queryObject.setIndentfoodname(indentfoodname);
 		// 创建匹配器，即如何使用查询条件
 		ExampleMatcher matcher = ExampleMatcher.matching() // 构建对象
 				.withMatcher("fullname", GenericPropertyMatchers.startsWith()) // 姓名采用“开始匹配”的方式查询
@@ -35,7 +35,7 @@ public class IndentManagerImpl extends GenericManagerImpl<Indent, Long> implemen
 		return result;
 	}
 	@Autowired
-	public void setMerchantDao(IndentDao indentDao) {
+	public void setIndentDao(IndentDao indentDao) {
 		this.indentDao = indentDao;
 		this.dao =  this.indentDao;
 	}

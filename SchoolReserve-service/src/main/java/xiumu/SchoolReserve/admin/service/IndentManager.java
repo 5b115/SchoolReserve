@@ -11,5 +11,5 @@ public interface IndentManager extends GenericManager<Indent, Long> {
 	
 	List<Indent> findAll();
 	
-	List<Indent> findbyIndentname(String indentname);
+	List<Indent> findbyIndentfoodname(String indentfoodname);
 }
