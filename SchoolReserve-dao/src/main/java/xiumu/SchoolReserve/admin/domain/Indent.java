@@ -12,37 +12,37 @@ public class Indent extends BaseEntity{
 
 	private static final long serialVersionUID = -4376674977047164142L;
 	
-	@Column(name = "INTENDFOODNAME")
-	String intendfoodname;	//订单菜品名
+	@Column(name = "INDENDTOODNAME")
+	String indentfoodname;	//订单菜品名
 	
-	@Column(name = "INTENDDATE")
-	String intenddate;  //订单日期
+	@Column(name = "INDENTDATE")
+	String indentdate;  //订单日期
 	
-	@Column(name = "INTENDPRICE")
-	String intendprice;	//订单菜品名
+	@Column(name = "INDENTPRICE")
+	String indentprice;	//订单价格
 	
-	public String getIntendfoodname() {
-		return intendfoodname;
+	public String getIndentfoodname() {
+		return indentfoodname;
 	}
 
-	public void setIntendfoodname(String intendfoodname) {
-		this.intendfoodname = intendfoodname;
+	public void setIndentfoodname(String indentfoodname) {
+		this.indentfoodname = indentfoodname;
 	}
 
-	public String getIntenddate() {
-		return intenddate;
+	public String getIndentfoodnamedate() {
+		return indentdate;
 	}
 
-	public void setIntenddate(String intenddate) {
-		this.intenddate = intenddate;
+	public void setIndentdate(String indentdate) {
+		this.indentdate = indentdate;
 	}
 	
-	public String getIntendprice() {
-		return intendprice;
+	public String getIndentprice() {
+		return indentprice;
 	}
 
-	public void setIntendprice(String intendprice) {
-		this.intendprice = intendprice;
+	public void setIntendprice(String indentprice) {
+		this.indentprice = indentprice;
 	}
 	
 }
