@@ -1,30 +1,23 @@
 package xiumu.SchoolReserve.admin.dao;
-
-import java.util.List;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+ 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import edu.zut.cs.javaee.dream.base.dao.GenericDaoTestCase;
+import edu.zut.cs.javaee.dream.base.service.GenericGenerator;
 import xiumu.SchoolReserve.admin.domain.Merchant;
 
-public class MerchantDaoTest extends GenericDaoTestCase<Long, Merchant, MerchantDao>{
+public class MerchantDaoTest extends GenericGenerator{
 
-	/**
-	 * Logger for this class
-	 */
-	private static final Logger logger = LogManager.getLogger(MerchantDaoTest.class.getName());
-	
 	@Autowired
 	MerchantDao merchantDao;
 	
 	
 	@Test
-	public void testInsert() {
+	public void testAdd() {
 
 		Merchant merchant = new Merchant();
+		merchant.setMerchantname("黄焖鸡");
 		merchant.setMerchantaddress("北苑餐厅");
-		
+		this.merchantDao.save(merchant);
 	}
 }
