@@ -1,6 +1,6 @@
-Ext.define('student.view.StudentEdit', {
+Ext.define('merchant.view.MerchantEdit', {
 	extend : 'Ext.window.Window',
-	alias : 'widget.studentEdit',
+	alias : 'widget.merchantEdit',
 	title : '编辑学生信息',
 	layout : 'fit',
 	autoShow : true,

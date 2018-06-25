@@ -1,6 +1,6 @@
-Ext.define('student.model.StudentModel', {
+Ext.define('merchant.model.MerchantModel', {
 	extend : 'Ext.data.Model',
-	alias : 'widget.studentModel',
+	alias : 'widget.merchantModel',
 	fields : [ {
 		name : 'id',
 		type : 'int',
