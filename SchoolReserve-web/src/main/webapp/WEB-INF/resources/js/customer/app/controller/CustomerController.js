@@ -1,4 +1,4 @@
-Ext.define('Customer.controller.CustomerController', {
+Ext.define('customer.controller.CustomerController', {
 	extend : 'Ext.app.Controller',
 	alias : 'widget.customerController',
 	stores : [ 'CustomerStore' ],

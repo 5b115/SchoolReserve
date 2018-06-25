@@ -2,19 +2,19 @@ Ext.define('customer.model.CustomerModel', {
 	extend : 'Ext.data.Model',
 	alias : 'widget.customerModel',
 	fields : [ {
-		name : 'CustomerSno',
+		name : 'customerSno',
 		type : 'int',
 		sortable : true
 	}, {
-		name : 'CustomerName',
+		name : 'customerName',
 		type : 'string',
 		sortable : true
 	}, {
-		name : 'CustomerSex',
+		name : 'customerSex',
 		type : 'string',
 		sortable : true
 	}, {
-		name : 'RegistrationDate',
+		name : 'registrationDate',
 		type : 'string',
 		sortable : true
 	}]

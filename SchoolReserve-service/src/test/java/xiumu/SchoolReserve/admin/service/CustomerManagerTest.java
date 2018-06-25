@@ -35,7 +35,7 @@ public class CustomerManagerTest extends GenericManagerTestCase<Long, Customer, 
 	}
 	@Before
 	public void setUp() throws Exception{
-		for(int i=0;i<5;i++)
+		for(int i=0;i<50;i++)
 			
 		{
 			Customer customer = new Customer();

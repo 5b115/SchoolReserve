@@ -1,4 +1,4 @@
-Ext.define('customer.view.AreaEdit', {
+Ext.define('customer.view.CustomerEdit', {
 	extend : 'Ext.window.Window',
 	alias : 'widget.customerEdit',
 	title : '编辑顾客信息',
@@ -12,19 +12,19 @@ Ext.define('customer.view.AreaEdit', {
 			border : false,
 			items : [ {
 				xtype : 'textfield',
-				name : 'CustomerSno',
+				name : 'customerSno',
 				fieldLabel : '顾客学号'
 			}, {
 				xtype : 'textfield',
-				name : 'CustomerName',
+				name : 'customerName',
 				fieldLabel : '顾客姓名'
 			}, {
 				xtype : 'textfield',
-				name : 'CustomerSex',
+				name : 'customerSex',
 				fieldLabel : '顾客性别'
-			} {
+			}, {
 				xtype : 'textfield',
-				name : 'RegistrationDate',
+				name : 'registrationDate',
 				fieldLabel : '注册日期'
 			}]
 		} ];

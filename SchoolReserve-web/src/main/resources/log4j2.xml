@@ -9,7 +9,7 @@
 	<Loggers>
 		<logger name="org.springframework" level="WARN" />
 		<logger name="org.hibernate" level="WARN" />
-		<logger name="edu.zut.cs" level="DEBUG" />
+		<logger name="xiumu" level="DEBUG" />
 		<Root level="debug">
 			<AppenderRef ref="Console" />
 		</Root>

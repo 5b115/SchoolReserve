@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Area 区域信息展示</title>
+<title>SchoolReserve信息展示</title>
 </head>
 <link rel="stylesheet" type="text/css"
 	href="<%=extjsPath%>resources/css/ext-all-neptune.css">
@@ -23,7 +23,7 @@
 	var server_context = basePath;
 </script>
 <script type="text/javascript"
-	src="${pageContext.request.contextPath}/resources/js/Customer/app.js"></script>
+	src="${pageContext.request.contextPath}/resources/js/customer/app.js"></script>
 <body>
 </body>
 </html>

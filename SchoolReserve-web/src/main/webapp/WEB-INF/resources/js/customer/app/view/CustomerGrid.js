@@ -1,12 +1,12 @@
 var pageSize = 20;
 
-var areaStore = Ext.create('area.store.AreaStore');
+var customerStore = Ext.create('customer.store.CustomerStore');
 
-Ext.define('area.view.AreaGrid', {
+Ext.define('customer.view.CustomerGrid', {
 	extend : 'Ext.grid.GridPanel',
-	alias : 'widget.areaGrid',
+	alias : 'widget.customerGrid',
 	title : '校园订餐顾客信息列表',
-	store : areaStore,
+	store : customerStore,
 	columns : [ {
 		text : 'ID',
 		width : 50,
@@ -16,21 +16,21 @@ Ext.define('area.view.AreaGrid', {
 		text : "学号",
 		width : 80,
 		sortable : true,
-		dataIndex : 'CustomerSno'
+		dataIndex : 'customerSno'
 	}, {
 		text : "姓名",
 		width : 120,
 		sortable : true,
-		dataIndex : 'CustomerName'
+		dataIndex : 'customerName'
 	}, {
 		text : "性别",
 		width : 80,
 		sortable : true,
-		dataIndex : 'CustomerSex'
+		dataIndex : 'customerSex'
 	}, {
 		text : "注册时间",
 		width : 150,
-		dataIndex : 'RegistrationDate',
+		dataIndex : 'registrationDate',
 		renderer : Ext.util.Format.dateRenderer('Y/m/d H:i:s'),
 		sortable : true
 	} ],
@@ -42,7 +42,7 @@ Ext.define('area.view.AreaGrid', {
 
 	bbar : new Ext.PagingToolbar({
 		pageSize : pageSize,// 每页显示的记录值
-		store : areaStore,
+		store : customerStore,
 		displayInfo : true,
 		firstTest : '首页',
 		lastText : '尾页',
