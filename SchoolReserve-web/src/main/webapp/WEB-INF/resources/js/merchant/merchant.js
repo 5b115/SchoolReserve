@@ -1,6 +1,6 @@
 Ext.require(['Ext.data.*', 'Ext.grid.*']);
 
-Ext.define('student.StudentModel', {
+Ext.define('merchant.MerchantModel', {
 			extend : 'Ext.data.Model',
 			fields : [{
 						name : 'id',
@@ -44,7 +44,7 @@ var pageSize = 20;
 var store = new Ext.data.Store({
 			autoLoad : true,
 			autoSync : true,// 需要同步
-			model : 'student.StudentModel',
+			model : 'merchant.MerchantModel',
 			proxy : {
 				type : 'rest',
 				url : './.json',
@@ -117,7 +117,7 @@ var rowEditing = Ext.create('Ext.grid.plugin.RowEditing', {
 		});
 
 var studentGrid = new Ext.grid.GridPanel({
-			id : 'studentGrid',
+			id : 'merchantGrid',
 			plugins : [rowEditing],
 			store : store,
 			region : 'center',
@@ -221,7 +221,7 @@ new Ext.form.NumberField({
 
 var clearForm = function() {
 	Ext.Msg.alert('重置', '重置查询表单！');
-	studentForm.getForm().reset();
+	merchantForm.getForm().reset();
 }
 
 var queryForm = function() {
@@ -266,7 +266,7 @@ Ext.application({
 			launch : function() {
 				Ext.create('Ext.container.Viewport', {
 							layout : 'border',
-							items : [studentForm, studentGrid]
+							items : [merchantForm, merchantGrid]
 						});
 			}
 		});

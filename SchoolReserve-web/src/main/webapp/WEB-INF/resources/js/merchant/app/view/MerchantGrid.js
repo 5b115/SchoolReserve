@@ -1,12 +1,12 @@
 var pageSize = 20;
 
-var studentStore = Ext.create('student.store.StudentStore');
+var merchantStore = Ext.create('merchant.store.MerchantStore');
 
-Ext.define('student.view.StudentGrid', {
+Ext.define('merchant.view.MerchantGrid', {
 	extend : 'Ext.grid.GridPanel',
-	alias : 'widget.studentGrid',
+	alias : 'widget.merchantGrid',
 	title : 'Java EE 课程-学生列表',
-	store : studentStore,
+	store : merchantStore,
 	columns : [ {
 		text : 'ID',
 		width : 50,
