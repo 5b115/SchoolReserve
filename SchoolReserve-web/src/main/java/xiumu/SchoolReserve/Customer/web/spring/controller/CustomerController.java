@@ -19,6 +19,7 @@ public class CustomerController extends GenericController<Customer,Long,Customer
 	@Autowired
     public void setCustomerManager(CustomerManager customerManager) {
 		this.customerManager = customerManager;
+		this.manager = this.customerManager;
 	}
 
 
