@@ -38,19 +38,35 @@ public class CustomerManagerTest extends GenericManagerTestCase<Long, Customer, 
 		for(int i=0;i<50;i++)
 			
 		{
+			
 			Customer customer = new Customer();
+			if(i%3==0||i%5==0) {
+				customer.setCustomerSex("男");
+			}else {
+				customer.setCustomerSex("女");
+			}
 			customer.setCustomerSno("2016");
-			customer.setCustomerName("吴吴"+i);
-			customer.setCustomerSex("男");
-			customer.setRegistrationDate("2016-8-8");
+			
+			if(i%3==0&&i%6==0){
+				if(i<=30) {
+					customer.setCustomerName("张娜拉"+i);
+				}else {
+					customer.setCustomerName("张柏芝"+i);
+				}
+			}
+			else {
+				customer.setCustomerName("刘益民"+i);
+			}
+		
+			customer.setRegistrationDate("2016/8/8");
 			this.entity = this.manager.save(customer);
 		}
 	}
 	@Test@Rollback(false)//避免插入的数据回滚
 	public void testFindByCustomername() {
-		List<Customer> result = this.customerManager.findbyCustomername("吴");
+		List<Customer> result = this.customerManager.findbyCustomername("张");
 		assertNotNull(result);
 		assertEquals(1, result.size());
-		assertEquals("吴吴", result.get(0).getCustomerName());
+		assertEquals("吴", result.get(0).getCustomerName());
 	}
 }
