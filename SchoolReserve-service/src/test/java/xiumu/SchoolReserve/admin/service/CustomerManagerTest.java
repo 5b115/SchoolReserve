@@ -46,15 +46,15 @@ public class CustomerManagerTest extends GenericManagerTestCase<Long, Customer, 
 				customer.setCustomerSex("女");
 			}
 			customer.setCustomerSno("2016");
-			
-			if(i%3==0&&i%6==0){
+			if(i%3==0&&i%6==0) {
 				if(i<=30) {
 					customer.setCustomerName("张娜拉"+i);
 				}else {
-					customer.setCustomerName("张柏芝"+i);
+					customer.setCustomerName("谢霆锋"+i);
 				}
 			}
 			else {
+
 				customer.setCustomerName("刘益民"+i);
 			}
 		
@@ -64,6 +64,9 @@ public class CustomerManagerTest extends GenericManagerTestCase<Long, Customer, 
 	}
 	@Test@Rollback(false)//避免插入的数据回滚
 	public void testFindByCustomername() {
-		
+		List<Customer> result = this.customerManager.findbyCustomername("吴");
+		assertNotNull(result);
+		assertEquals(1, result.size());
+		assertEquals("吴吴", result.get(0).getCustomerName());
 	}
 }
