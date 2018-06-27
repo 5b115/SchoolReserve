@@ -1,4 +1,4 @@
-package xiumu.SchoolReserve.Merchant.web.spring.controller;
+package xiumu.SchoolReserve.merchant.web.spring.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
