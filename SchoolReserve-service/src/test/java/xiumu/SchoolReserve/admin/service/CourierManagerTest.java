@@ -25,12 +25,12 @@ public class CourierManagerTest extends GenericGenerator{
 	public void Cadd() 
 	{
 		List<Courier> list=new ArrayList<Courier>();
-		for(int i=0;i<100;i++)
+		for(int i=0;i<6;i++)
     	{
     		Courier courier=new Courier();
     		courier.setCname("bigpenzi");
-    		courier.setCaddress("****");
-    		courier.setCphone("1*******0");
+    		courier.setCaddress("123");
+    		courier.setCphone("12340");
     		list.add(courier);
     	}
     	this.courierManager.save(list);
