@@ -5,7 +5,7 @@ var merchantStore = Ext.create('merchant.store.MerchantStore');
 Ext.define('merchant.view.MerchantGrid', {
 	extend : 'Ext.grid.GridPanel',
 	alias : 'widget.merchantGrid',
-	title : 'Java EE 课程-学生列表',
+	title : '商户信息表',
 	store : merchantStore,
 	columns : [ {
 		text : 'ID',
@@ -13,35 +13,15 @@ Ext.define('merchant.view.MerchantGrid', {
 		sortable : true,
 		dataIndex : 'id'
 	}, {
-		text : "学号",
+		text : "商户名",
 		width : 120,
 		sortable : true,
-		dataIndex : 'code'
+		dataIndex : 'merchantname'
 	}, {
-		text : "姓名",
+		text : "商户地址",
 		width : 80,
 		sortable : true,
-		dataIndex : 'fullName'
-	}, {
-		text : "性别",
-		width : 80,
-		sortable : true,
-		dataIndex : 'gender'
-	}, {
-		text : " 专业",
-		width : 80,
-		sortable : true,
-		dataIndex : 'major'
-	}, {
-		text : "年级",
-		width : 80,
-		sortable : true,
-		dataIndex : 'grade'
-	}, {
-		text : "班级",
-		width : 80,
-		sortable : true,
-		dataIndex : 'clazz'
+		dataIndex : 'merchantaddress'
 	}, {
 		text : "添加时间",
 		width : 150,
@@ -63,7 +43,7 @@ Ext.define('merchant.view.MerchantGrid', {
 
 	bbar : new Ext.PagingToolbar({
 		pageSize : pageSize,// 每页显示的记录值
-		store : studentStore,
+		store : merchantStore,
 		displayInfo : true,
 		firstTest : '首页',
 		lastText : '尾页',
