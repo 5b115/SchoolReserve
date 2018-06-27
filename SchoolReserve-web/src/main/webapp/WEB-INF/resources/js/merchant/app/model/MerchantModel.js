@@ -6,27 +6,11 @@ Ext.define('merchant.model.MerchantModel', {
 		type : 'int',
 		sortable : true
 	}, {
-		name : 'code',
+		name : 'merchantname',
 		type : 'string',
 		sortable : true
 	}, {
-		name : 'fullName',
-		type : 'string',
-		sortable : true
-	}, {
-		name : 'gender',
-		type : 'string',
-		sortable : true
-	}, {
-		name : 'major',
-		type : 'string',
-		sortable : true
-	}, {
-		name : 'grade',
-		type : 'string',
-		sortable : true
-	}, {
-		name : 'clazz',
+		name : 'merchantaddress',
 		type : 'string',
 		sortable : true
 	}, {

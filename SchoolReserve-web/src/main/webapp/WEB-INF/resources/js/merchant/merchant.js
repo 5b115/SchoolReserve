@@ -7,23 +7,11 @@ Ext.define('merchant.MerchantModel', {
 						type : 'int',
 						sortable : true
 					}, {
-						name : 'code',
+						name : 'merchantname',
 						type : 'string',
 						sortable : true
 					}, {
-						name : 'fullName',
-						type : 'string',
-						sortable : true
-					}, {
-						name : 'gender',
-						type : 'string',
-						sortable : true
-					}, {
-						name : 'grade',
-						type : 'string',
-						sortable : true
-					}, {
-						name : 'clazz',
+						name : 'merchantaddress',
 						type : 'string',
 						sortable : true
 					}, {
@@ -116,7 +104,7 @@ var rowEditing = Ext.create('Ext.grid.plugin.RowEditing', {
 			}
 		});
 
-var studentGrid = new Ext.grid.GridPanel({
+var merchantGrid = new Ext.grid.GridPanel({
 			id : 'merchantGrid',
 			plugins : [rowEditing],
 			store : store,
@@ -125,49 +113,31 @@ var studentGrid = new Ext.grid.GridPanel({
 			loadMask : true,
 			stripeRows : true,
 			width : 600,
-			title : '学生基本信息列表',
+			title : '商户基本信息列表',
 			columns : [{
 						text : 'ID',
 						width : 50,
 						sortable : true,
 						dataIndex : 'id'
 					}, {
-						text : "学号",
+						text : "商户名",
 						width : 120,
 						sortable : true,
-						dataIndex : 'code',
+						dataIndex : 'merchantname',
 						editor : textFieldEditor,
 						field : {
 							xtype : 'textfield'
 						}
 					}, {
-						text : "姓名",
+						text : "商户地址",
 						width : 80,
 						sortable : true,
-						dataIndex : 'fullName',
+						dataIndex : 'merchantaddress',
 						editor : textFieldEditor,
 						field : {
 							xtype : 'textfield'
 						}
-					}, {
-						text : "性别",
-						width : 50,
-						sortable : true,
-						dataIndex : 'gender',
-						editor : genderFieldEditor
-					}, {
-						text : "年级",
-						width : 50,
-						sortable : true,
-						editor : textFieldEditor,
-						dataIndex : 'grade'
-					}, {
-						text : "班级",
-						width : 80,
-						sortable : true,
-						editor : textFieldEditor,
-						dataIndex : 'clazz'
-					}, {
+					},  {
 						text : "添加时间",
 						width : 150,
 						dataIndex : 'dateCreated',
@@ -206,7 +176,7 @@ var studentGrid = new Ext.grid.GridPanel({
 			}
 		});
 
-studentGrid.getSelectionModel().on('selectionchange',
+merchantGrid.getSelectionModel().on('selectionchange',
 		function(selModel, selections) {
 			studentGrid.down('#delete').setDisabled(selections.length === 0);
 		});
@@ -227,7 +197,7 @@ var clearForm = function() {
 var queryForm = function() {
 	Ext.Msg.alert('查询', '将开始执行查询！');
 }
-var studentForm = new Ext.form.FormPanel({
+var merchantForm = new Ext.form.FormPanel({
 			title : '信息查询',
 			width : 200,
 			height : 200,
@@ -236,17 +206,13 @@ var studentForm = new Ext.form.FormPanel({
 			defaultType : 'textfiled',
 			labelWidth : 30,
 			items : [{
-						fieldLabel : "学号",
+						fieldLabel : "商户名",
 						xtype : 'textfield',
-						name : 'code'
+						name : 'merchantname'
 					}, {
-						fieldLabel : "姓名",
+						fieldLabel : "商户地址",
 						xtype : 'textfield',
-						name : 'name'
-					}, {
-						fieldLabel : "性别",
-						xtype : 'textfield',
-						name : 'gender'
+						name : 'merchantaddress'
 					}],
 			buttons : [{
 						xtype : 'button',
@@ -262,7 +228,7 @@ var studentForm = new Ext.form.FormPanel({
 		})
 
 Ext.application({
-			name : '学生信息',
+			name : '商户信息',
 			launch : function() {
 				Ext.create('Ext.container.Viewport', {
 							layout : 'border',

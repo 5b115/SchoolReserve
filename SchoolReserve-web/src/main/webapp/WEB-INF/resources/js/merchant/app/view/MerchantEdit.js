@@ -1,7 +1,7 @@
 Ext.define('merchant.view.MerchantEdit', {
 	extend : 'Ext.window.Window',
 	alias : 'widget.merchantEdit',
-	title : '编辑学生信息',
+	title : '编辑商户信息',
 	layout : 'fit',
 	autoShow : true,
 	initComponent : function() {
@@ -12,29 +12,13 @@ Ext.define('merchant.view.MerchantEdit', {
 			border : false,
 			items : [ {
 				xtype : 'textfield',
-				name : 'code',
-				fieldLabel : '学号'
+				name : 'merchantname',
+				fieldLabel : '商户名'
 			}, {
 				xtype : 'textfield',
-				name : 'fullName',
-				fieldLabel : '姓名'
-			}, {
-				xtype : 'textfield',
-				name : 'gender',
-				fieldLabel : '性别'
-			}, {
-				xtype : 'textfield',
-				name : 'major',
-				fieldLabel : '专业'
-			}, {
-				xtype : 'textfield',
-				name : 'grade',
-				fieldLabel : '年级'
-			}, {
-				xtype : 'textfield',
-				name : 'clazz',
-				fieldLabel : '班级'
-			} ]
+				name : 'merchantaddress',
+				fieldLabel : '商户地址'
+			}]
 		} ];
 		this.buttons = [ {
 			text : '保存',
