@@ -12,13 +12,13 @@ public class Indent extends BaseEntity{
 
 	private static final long serialVersionUID = -4376674977047164142L;
 	
-	@Column(name = "INDENDTOODNAME")
+	@Column(name = "indentfoodname")
 	String indentfoodname;	//订单菜品名
 	
-	@Column(name = "INDENTDATE")
+	@Column(name = "indentdate")
 	String indentdate;  //订单日期
 	
-	@Column(name = "INDENTPRICE")
+	@Column(name = "indentprice")
 	String indentprice;	//订单价格
 	
 	public String getIndentfoodname() {
@@ -41,7 +41,7 @@ public class Indent extends BaseEntity{
 		return indentprice;
 	}
 
-	public void setIntendprice(String indentprice) {
+	public void setIndentprice(String indentprice) {
 		this.indentprice = indentprice;
 	}
 	
