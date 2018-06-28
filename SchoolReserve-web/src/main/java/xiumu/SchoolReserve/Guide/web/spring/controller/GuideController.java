@@ -10,7 +10,7 @@ import xiumu.SchoolReserve.admin.domain.Guide;
 import xiumu.SchoolReserve.admin.service.GuideManager;
 
 @Controller
-@RequestMapping("/indent")
+@RequestMapping("/guide")
 public class GuideController extends GenericController<Guide, Long, GuideManager> {
 
 	GuideManager GuideManager;
@@ -23,7 +23,7 @@ public class GuideController extends GenericController<Guide, Long, GuideManager
 	
 	@RequestMapping(method = RequestMethod.GET,value = "/index.html")
 	public String index() {
-		String result = "/Guide/index";
+		String result = "/guide/index";
 		return result;
 	}
 	

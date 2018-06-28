@@ -1,6 +1,6 @@
-Ext.define('customer.model.CustomerModel', {
+Ext.define('guide.model.GuideModel', {
 	extend : 'Ext.data.Model',
-	alias : 'widget.customerModel',
+	alias : 'widget.guideModel',
 	fields : [ {
 		name : 'cmaddress',
 		type : 'string',

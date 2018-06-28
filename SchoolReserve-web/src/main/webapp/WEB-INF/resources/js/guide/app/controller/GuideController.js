@@ -1,6 +1,6 @@
 Ext.define('guide.controller.GuideController', {
 	extend : 'Ext.app.Controller',
-	alias : 'widget.customerController',
+	alias : 'widget.guideController',
 	stores : [ 'GuideStore' ],
 	models : [ 'GuideModel' ],
 	views : [ 'GuideGrid', 'GuideEdit' ],

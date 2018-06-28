@@ -167,9 +167,9 @@ var guideGrid = new Ext.grid.GridPanel({
 			}
 		});
 
-customerGrid.getSelectionModel().on('selectionchange',
+guideGrid.getSelectionModel().on('selectionchange',
 		function(selModel, selections) {
-	customerGrid.down('#delete').setDisabled(selections.length === 0);
+	guideGrid.down('#delete').setDisabled(selections.length === 0);
 		});
 
 new Ext.form.NumberField({
@@ -182,13 +182,13 @@ new Ext.form.NumberField({
 
 var clearForm = function() {
 	Ext.Msg.alert('重置', '重置查询表单！');
-	customerForm.getForm().reset();
+	guideForm.getForm().reset();
 }
 
 var queryForm = function() {
 	Ext.Msg.alert('查询', '将开始执行查询！');
 }
-var customerForm = new Ext.form.FormPanel({
+var guideForm = new Ext.form.FormPanel({
 			title : '信息查询',
 			width : 200,
 			height : 200,
