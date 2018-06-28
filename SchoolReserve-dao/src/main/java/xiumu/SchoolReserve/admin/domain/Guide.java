@@ -6,7 +6,7 @@ import javax.persistence.Table;
 
 import edu.zut.cs.javaee.dream.base.domain.BaseEntity;
 
-@Table(name = "T_Guide")
+@Table(name = "T_GUIDE")
 @Entity
 public class Guide extends BaseEntity{
 
