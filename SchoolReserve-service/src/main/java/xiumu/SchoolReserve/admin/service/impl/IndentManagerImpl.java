@@ -24,7 +24,7 @@ public class IndentManagerImpl extends GenericManagerImpl<Indent, Long> implemen
 	@Override
 	public List<Indent> findbyIndentfoodname(String indentfoodname) {
 		Indent queryObject = new Indent();
-		queryObject.setIndentfoodname(indentfoodname);
+		queryObject.setindentfoodname(indentfoodname);
 		// 创建匹配器，即如何使用查询条件
 		ExampleMatcher matcher = ExampleMatcher.matching() // 构建对象
 				.withMatcher("fullname", GenericPropertyMatchers.startsWith()) // 姓名采用“开始匹配”的方式查询

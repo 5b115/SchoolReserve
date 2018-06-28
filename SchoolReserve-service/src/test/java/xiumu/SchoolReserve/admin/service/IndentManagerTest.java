@@ -16,9 +16,9 @@ public class IndentManagerTest extends GenericGenerator{
 	public void testAdd() {
 		for(int i=0;i<20;i++) {
 			Indent indent = new Indent();
-			indent.setIndentfoodname("黄焖鸡");
-			indent.setIndentprice("11元");
-			indent.setIndentdate("18年6月10日");
+			indent.setindentfoodname("黄焖鸡");
+			indent.setindentprice("11元");
+			indent.setindentdate("18年6月10日");
 			this.indentManager.save(indent);
 		}
 			

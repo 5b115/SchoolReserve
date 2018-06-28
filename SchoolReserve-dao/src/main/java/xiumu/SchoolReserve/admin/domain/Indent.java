@@ -21,27 +21,27 @@ public class Indent extends BaseEntity{
 	@Column(name = "indentprice")
 	String indentprice;	//订单价格
 	
-	public String getIndentfoodname() {
+	public String getindentfoodname() {
 		return indentfoodname;
 	}
 
-	public void setIndentfoodname(String indentfoodname) {
+	public void setindentfoodname(String indentfoodname) {
 		this.indentfoodname = indentfoodname;
 	}
 
-	public String getIndentfoodnamedate() {
+	public String getindentdate() {
 		return indentdate;
 	}
 
-	public void setIndentdate(String indentdate) {
+	public void setindentdate(String indentdate) {
 		this.indentdate = indentdate;
 	}
 	
-	public String getIndentprice() {
+	public String getindentprice() {
 		return indentprice;
 	}
 
-	public void setIndentprice(String indentprice) {
+	public void setindentprice(String indentprice) {
 		this.indentprice = indentprice;
 	}
 	
