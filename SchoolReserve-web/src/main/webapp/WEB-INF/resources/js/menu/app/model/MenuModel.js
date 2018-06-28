@@ -6,7 +6,7 @@ Ext.define('menu.model.MenuModel', {
 		type : 'int',
 		sortable : true
 	}, {
-		name : 'menuname',
+		name : 'menufoodname',
 		type : 'string',
 		sortable : true
 	}, {

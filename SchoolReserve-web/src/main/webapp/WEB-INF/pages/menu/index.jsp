@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>快递人员信息展示</title>
+<title>菜单信息展示</title>
 </head>
 <link rel="stylesheet" type="text/css"
 	href="<%=extjsPath%>resources/css/ext-all-neptune.css">
@@ -22,7 +22,7 @@
 	var server_context = basePath;
 </script>
 <script type="text/javascript"
-	src="${pageContext.request.contextPath}/resources/js/courier/app.js"></script>
+	src="${pageContext.request.contextPath}/resources/js/menu/app.js"></script>
 </head>
 <body>
 </body>

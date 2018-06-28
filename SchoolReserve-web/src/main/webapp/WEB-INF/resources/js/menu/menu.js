@@ -7,7 +7,7 @@ Ext.define('menu.MenuModel', {
 						type : 'int',
 						sortable : true
 					}, {
-						name : 'menuname',
+						name : 'menufoodname',
 						type : 'string',
 						sortable : true
 					}, {
@@ -117,7 +117,7 @@ var menuGrid = new Ext.grid.GridPanel({
 						text : "菜品名称",
 						width : 120,
 						sortable : true,
-						dataIndex : 'menuname',
+						dataIndex : 'menufoodname',
 						editor : textFieldEditor,
 						field : {
 							xtype : 'textfield'
@@ -126,7 +126,7 @@ var menuGrid = new Ext.grid.GridPanel({
 						text : "菜品编号",
 						width : 80,
 						sortable : true,
-						dataIndex : 'menuaddress',
+						dataIndex : 'menunumber',
 						editor : textFieldEditor,
 						field : {
 							xtype : 'textfield'
@@ -198,7 +198,7 @@ var menuForm = new Ext.form.FormPanel({
 			items : [{
 						fieldLabel : "菜品名称",
 						xtype : 'textfield',
-						name : 'menuname'
+						name : 'menufoodname'
 					}, {
 						fieldLabel : "菜品编号",
 						xtype : 'textfield',

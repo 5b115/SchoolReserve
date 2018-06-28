@@ -16,7 +16,7 @@ Ext.define('menu.view.MenuGrid', {
 		text : "菜品名称",
 		width : 120,
 		sortable : true,
-		dataIndex : 'menuname'
+		dataIndex : 'menufoodname'
 	}, {
 		text : "菜品编号",
 		width : 80,
@@ -25,8 +25,8 @@ Ext.define('menu.view.MenuGrid', {
 	}, {
 		text : "菜品价格",
 		width : 150,
+		sortable : true,
 		dataIndex : 'menuprice'
-		sortable : true
 	}],
 	viewConfig : {
 		columnsText : '列',

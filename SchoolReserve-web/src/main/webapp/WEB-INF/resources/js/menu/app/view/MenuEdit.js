@@ -12,7 +12,7 @@ Ext.define('menu.view.MenuEdit', {
 			border : false,
 			items : [ {
 				xtype : 'textfield',
-				name : 'menuname',
+				name : 'menufoodname',
 				fieldLabel : '菜品名'
 			}, {
 				xtype : 'textfield',
