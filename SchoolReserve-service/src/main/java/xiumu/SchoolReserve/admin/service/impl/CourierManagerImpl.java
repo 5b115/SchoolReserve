@@ -22,9 +22,9 @@ public class CourierManagerImpl extends GenericManagerImpl<Courier, Long> implem
 	CourierDao courierDao;
 	
 	@Override
-	public List<Courier> findbyCname(String Cname) {
+	public List<Courier> findbyCname(String cname) {
 		Courier queryObject = new Courier();
-		queryObject.setCname(Cname);
+		queryObject.setcname(cname);
 		// 创建匹配器，即如何使用查询条件
 		ExampleMatcher matcher = ExampleMatcher.matching() // 构建对象
 				.withMatcher("fullname", GenericPropertyMatchers.startsWith()) // 姓名采用“开始匹配”的方式查询

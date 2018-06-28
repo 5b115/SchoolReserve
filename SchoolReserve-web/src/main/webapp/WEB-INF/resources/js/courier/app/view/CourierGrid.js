@@ -16,21 +16,21 @@ Ext.define('courier.view.CourierGrid', {
 		text : '姓名',
 		width : 120,
 		sortable : true,
-		dataIndex : 'Cname'
+		dataIndex : 'cname'
 	},{
 		text : "负责区域",
 		width : 120,
 		sortable : true,
-		dataIndex : 'Caddress'
+		dataIndex : 'caddress'
 	}, {
 		text : "手机号",
-		width : 80,
+		width : 150,
 		sortable : true,
-		dataIndex : 'Cphone'
+		dataIndex : 'cphone'
 	}, {
 		text : "订单完成情况",
-		width : 150,
-		width : 80,
+		width : 200,
+		width : 200,
 		sortable : true,
 		dataIndex : 'sfwcdd'
 	} ],

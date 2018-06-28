@@ -3,16 +3,16 @@ Ext.require(['Ext.data.*', 'Ext.grid.*']);
 Ext.define('courier.CourierModel', {
 			extend : 'Ext.data.Model',
 			fields : [ {
-						name : 'Cname',
+						name : 'cname',
 						type : 'string',
 						sortable : true
 					}, {
-						name : 'Caddress',
+						name : 'caddress',
 						type : 'string',
 						sortable : true
 					},
 					 {
-						name : 'Cphone',
+						name : 'cphone',
 						type : 'string',
 						sortable : true
 					}, {
@@ -123,7 +123,7 @@ var courierGrid = new Ext.grid.GridPanel({
 						text : "姓名",
 						width : 80,
 						sortable : true,
-						dataIndex : 'Cname'
+						dataIndex : 'cname'
 						editor : textFieldEditor,
 						field : {
 							xtype : 'textfield'
@@ -132,7 +132,7 @@ var courierGrid = new Ext.grid.GridPanel({
 						text : "手机号",
 						width : 150,
 						sortable : true,
-						dataIndex : 'Cphone',
+						dataIndex : 'cphone',
 						editor : genderFieldEditor,
 						field : {
 							xtype : 'textfield'
@@ -205,15 +205,15 @@ var courierForm = new Ext.form.FormPanel({
 			items : [{
 						fieldLabel : "名字",
 						xtype : 'textfield',
-						name : 'Cname'
+						name : 'cname'
 					}, {
 						fieldLabel : "负责区域",
 						xtype : 'textfield',
-						name : 'Caddress'
+						name : 'caddress'
 					}, {
 						fieldLabel : "手机号",
 						xtype : 'textfield',
-						name : 'Cphone'
+						name : 'cphone'
 					}],
 			buttons : [{
 						xtype : 'button',

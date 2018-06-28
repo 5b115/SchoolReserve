@@ -5,16 +5,17 @@ Ext.define('courier.model.CourierModel', {
 		name : 'id',
 		type : 'int',
 		sortable : true
-	}, {
-		name : 'Caddress',
+	},  {
+		name : 'cname',
 		type : 'string',
 		sortable : true
-	}, {
-		name : 'Cname',
+	}, 
+	{
+		name : 'caddress',
 		type : 'string',
 		sortable : true
-	}, {
-		name : 'Cphone',
+	},{
+		name : 'cphone',
 		type : 'string',
 		sortable : true
 	},{

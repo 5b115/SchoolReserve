@@ -12,15 +12,15 @@ Ext.define('courier.view.CourierEdit', {
 			border : false,
 			items : [ {
 				xtype : 'textfield',
-				name : 'Cname',
+				name : 'cname',
 				fieldLabel : '快递人员姓名'
 			}, {
 				xtype : 'textfield',
-				name : 'Caddress',
+				name : 'caddress',
 				fieldLabel : '快递人员对应负责区域'
 			}, {
 				xtype : 'textfield',
-				name : 'Cphone',
+				name : 'cphone',
 				fieldLabel : '快递人员手机号'
 			}, {
 				xtype : 'textfield',

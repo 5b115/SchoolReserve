@@ -12,41 +12,41 @@ public class Courier extends BaseEntity{
 
 	private static final long serialVersionUID = -4376674977047164142L;
 	
-	@Column(name = "CNAME")
-	String Cname;	//快递员名字
+	@Column(name = "cname")
+	String cname;	//快递员名字
 	
-	@Column(name = "CADDRESS")
-	String Caddress;  //快递员负责区域
+	@Column(name = "caddress")
+	String caddress;  //快递员负责区域
 	
-	@Column(name = "CPHONE")
-	String Cphone;  //快递员电话
+	@Column(name = "cphone")
+	String cphone;  //快递员电话
 
 	boolean sfwcdd;
 	
-	public String getCname() {
-		return Cname;
+	public String getcname() {
+		return cname;
 	}
 
-	public void setCname(String cname) {
-		Cname = cname;
+	public void setcname(String cname) {
+		this.cname = cname;
 	}
 
-	public String getCaddress() {
-		return Caddress;
+	public String getcaddress() {
+		return caddress;
 	}
 
-	public void setCaddress(String caddress) {
-		Caddress = caddress;
+	public void setcaddress(String caddress) {
+		this.caddress = caddress;
 	}
 
 
 
-	public String getCphone() {
-		return Cphone;
+	public String getcphone() {
+		return cphone;
 	}
 
-	public void setCphone(String cphone) {
-		Cphone = cphone;
+	public void setcphone(String cphone) {
+		this.cphone = cphone;
 	}
 
 	public boolean isSfwcdd() {

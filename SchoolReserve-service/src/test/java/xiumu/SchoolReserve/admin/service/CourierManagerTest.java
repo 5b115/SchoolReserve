@@ -28,9 +28,9 @@ public class CourierManagerTest extends GenericGenerator{
 		for(int i=0;i<6;i++)
     	{
     		Courier courier=new Courier();
-    		courier.setCname("bigpenzi");
-    		courier.setCaddress("123");
-    		courier.setCphone("12340");
+    		courier.setcname("bigpenzi");
+    		courier.setcaddress("图书馆");
+    		courier.setcphone("12340");
     		list.add(courier);
     	}
     	this.courierManager.save(list);
