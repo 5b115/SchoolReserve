@@ -1,4 +1,4 @@
-Ext.define('indent.view.iIdentEdit', {
+Ext.define('indent.view.IndentEdit', {
 	extend : 'Ext.window.Window',
 	alias : 'widget.indentEdit',
 	title : '编辑订单信息',
