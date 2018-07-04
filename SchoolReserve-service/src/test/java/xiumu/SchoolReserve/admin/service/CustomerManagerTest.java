@@ -42,20 +42,27 @@ public class CustomerManagerTest extends GenericManagerTestCase<Long, Customer, 
 			Customer customer = new Customer();
 			if(i%3==0||i%5==0) {
 				customer.setCustomerSex("男");
+				System.out.println("这是第"+i+"位男明星来订餐，套餐及其丰盛");
 			}else {
 				customer.setCustomerSex("女");
+				System.out.println("这是第"+i+"位秀色可餐女红人来吃饭，色相优雅客观");
 			}
 			customer.setCustomerSno("2016");
-			if(i%3==0&&i%6==0) {
+			if(i%4==0||i%6==0) {
 				if(i<=30) {
 					customer.setCustomerName("张娜拉"+i);
+					
 				}else {
 					customer.setCustomerName("谢霆锋"+i);
 				}
 			}
 			else {
-
-				customer.setCustomerName("刘益民"+i);
+             if(i%2==0) {
+            	 customer.setCustomerName("吴凡"+i);
+             }else {
+            	 customer.setCustomerName("刘益民"+i);
+             }
+				
 			}
 		
 			customer.setRegistrationDate("2016/8/8");
