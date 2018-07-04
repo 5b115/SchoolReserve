@@ -26,8 +26,15 @@ Ext.define('customer.view.CustomerEdit', {
 				xtype : 'textfield',
 				name : 'registrationDate',
 				fieldLabel : '注册日期'
+			}, {
+				xtype : 'textfield',
+				name : 'customerIntro',
+				fieldLabel : '顾客介绍'
 			}]
+		
 		} ];
+
+		
 		this.buttons = [ {
 			text : '保存',
 			action : 'save'

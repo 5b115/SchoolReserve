@@ -23,6 +23,15 @@ public class Customer extends BaseEntity {
 
 	@Column(name = "RegistrationDate")
 	String RegistrationDate; // 注册日期
+	@Column(name = "CustomerIntro")
+	String CustomerIntro; // 用户介绍
+	public String getCustomerIntro() {
+		return CustomerIntro;
+	}
+
+	public void setCustomerIntro(String CustomerIntro) {
+		CustomerIntro = CustomerIntro;
+	}
 
 	public String getCustomerSno() {
 		return CustomerSno;

@@ -33,7 +33,12 @@ Ext.define('customer.view.CustomerGrid', {
 		dataIndex : 'registrationDate',
 		renderer : Ext.util.Format.dateRenderer('Y/m/d H:i:s'),
 		sortable : true
-	} ],
+	} , {
+		text : "用户介绍",
+		width : 200,
+		sortable : true,
+		dataIndex : 'customerIntro'
+	}],
 	viewConfig : {
 		columnsText : '列',
 		sortAscText : '升序',

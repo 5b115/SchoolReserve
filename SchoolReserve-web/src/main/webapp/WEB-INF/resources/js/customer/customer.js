@@ -108,7 +108,7 @@ var customerGrid = new Ext.grid.GridPanel({
 			columnLines : true,
 			loadMask : true,
 			stripeRows : true,
-			width : 600,
+			width :600,
 			title : '顾客基本信息列表',
 			columns : [{
 						text : "编号",
@@ -143,6 +143,12 @@ var customerGrid = new Ext.grid.GridPanel({
 						dataIndex : 'registrationDate',
 						renderer : Ext.util.Format.dateRenderer('Y/m/d H:i:s'),
 						sortable : true
+					}, {
+						text : "用户介绍",
+						width : 150,
+						sortable : true,
+						dataIndex : 'customerIntro',
+						editor : genderFieldEditor	
 					}],
 			viewConfig : {
 				columnsText : '列',

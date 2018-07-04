@@ -17,5 +17,9 @@ Ext.define('customer.model.CustomerModel', {
 		name : 'registrationDate',
 		type : 'string',
 		sortable : true
+	}, {
+		name : 'customerIntro',
+		type : 'string',
+		sortable : true
 	}]
 });
